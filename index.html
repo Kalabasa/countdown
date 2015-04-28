@@ -38,7 +38,7 @@
 		}
 		#clock{
 			display: inline-block;
-			width: 620px;
+			width: 465px;
 			margin: 1em;
 		}
 		#subtext{
@@ -55,9 +55,10 @@
 		
 	<script src="flipclock.min.js"></script>
 	<script>
-		var clock = $("#clock").FlipClock(new Date(2015, 5 - 1, 20, 16), {
+		var clock = new FlipClock($("#clock"), new Date(2015, 5 - 1, 20, 16), {
 			clockFace: "DailyCounter",
-			countdown: true
+			countdown: true,
+			showSeconds: false
 		});
 
 		var list = ["kaya pa?", "kaya pa ba?", "ano na?", "gumawa ka na lang kaya", "go! go! go!", "kaya mo yan!", "sige lang, laban!", "hello", "sige, mag-break ka muna", "ano na?", "o anong hinihintay mo? pasko?", "hala ka. kulang ka na sa oras", "delayed! haha!", "keep on fighting!", "fight!", "rest if you must but don't you quit", "hi!", "cram pa more", "iyak na lang", "lol", "hehe", "nasa huli ang pagsisisi", "o kay bilis ng panahon", "kape pa?", "kaya yan. kaw pa!", "panget ka", "binibigay mo na ba ang lahat?", "isa-isa lang kasi", "wala na", "mamalasin ka bukas", "sipag at tiyaga lang yan!", "kapag may tiyaga, may nilaga", "tignan mo o. wala nang oras", "tama na yan", "tama na ba yan?"];
