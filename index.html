@@ -22,8 +22,8 @@
 			margin: 0;
 			padding: 0;
 			font-family: "Open Sans", sans-serif;
-			background-color: #242424;
-			color: #ffffff;
+			background-color: #efefef;
+			color: #444444;
 		}
 		.container{
 			text-align: center;
@@ -42,26 +42,26 @@
 			margin: 1em;
 		}
 		#subtext{
-			font-size: 0.6em;
+			font-size: 0.8em;
 		}
 	</style>
 </head>
 <body>
 	<div class="container">
-		<div class="text">Semester Ends <small>in</small></div>
+		<div class="text">Last Day of Defense <small>in</small></div>
 		<div id="clock"></div>
 		<div id="subtext">lol wala kang javascript</div>
 	</div>
 		
 	<script src="flipclock.min.js"></script>
 	<script>
-		var clock = new FlipClock($("#clock"), new Date(2015, 6 - 1, 1, 16), {
+		var clock = new FlipClock($("#clock"), new Date(2015, 7 - 1, 26, 14), {
 			clockFace: "DailyCounter",
 			countdown: true,
 			showSeconds: false
 		});
 
-		var list = ["kaya pa?", "kaya pa ba?", "ano na?", "gumawa ka na lang kaya", "go! go! go!", "kaya mo yan!", "sige lang, laban!", "hello", "sige, mag-break ka muna", "ano na?", "o anong hinihintay mo? pasko?", "hala ka. kulang ka na sa oras", "delayed! haha!", "keep on fighting!", "fight!", "rest if you must but don't you quit", "hi!", "cram pa more", "iyak na lang", "lol", "hehe", "nasa huli ang pagsisisi", "o kay bilis ng panahon", "kape pa?", "kaya yan. kaw pa!", "panget ka", "binibigay mo na ba ang lahat?", "isa-isa lang kasi", "wala na", "mamalasin ka bukas", "sipag at tiyaga lang yan!", "kapag may tiyaga, may nilaga", "tignan mo o. wala nang oras", "tama na yan", "tama na ba yan?"];
+		var list = ["kaya pa?", "kaya pa ba?", "ano na?", "gumawa ka na lang kaya", "go! go! go!", "kaya mo yan!", "sige lang, laban!", "hello", "sige, mag-break ka muna", "ano na?", "o anong hinihintay mo? pasko?", "hala ka. kulang ka na sa oras", "delayed! haha!", "keep on fighting!", "fight!", "rest if you must but don't you quit", "hi!", "cram pa more", "iyak na lang", "lol", "hehe", "nasa huli ang pagsisisi", "o kay bilis ng panahon", "kape pa?", "kaya yan. kaw pa!", "panget ka", "binibigay mo na ba ang lahat?", "isa-isa lang kasi", "wala na", "mamalasin ka bukas", "sipag at tiyaga lang yan!", "kapag may tiyaga, may nilaga", "tignan mo o. wala ng oras", "tama na yan", "tama na ba yan?"];
 		var subtext = document.getElementById("subtext");
 		subtext.innerHTML = list[Math.floor(Math.random() * list.length)];
 	</script>
