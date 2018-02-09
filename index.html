@@ -1,17 +1,7 @@
 <!DOCTYPE html>
-<!--
-
-	HELLO
-		GUMAWA KA NA LANG KAYA NG THESIS/SP MO
-		
-			KEEP ON FIGHTING!
-	
-	by Lean Rada
-
--->
 <html>
 <head>
-	<title>SP Countdown</title>
+	<title>Countdown</title>
 	<link rel="stylesheet" href="flipclock.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -48,22 +38,18 @@
 </head>
 <body>
 	<div class="container">
-		<div class="text">Last Day of Defense <small>in</small></div>
+		<div class="text">Last Day <small>in</small></div>
 		<div id="clock"></div>
-		<div id="subtext">lol wala kang javascript</div>
+		<noscript id="subtext">lol wala kang javascript</noscript>
 	</div>
 		
 	<script src="flipclock.min.js"></script>
 	<script>
-		var clock = new FlipClock($("#clock"), new Date(2015, 7 - 1, 26, 14), {
+		var clock = new FlipClock($("#clock"), new Date(2018, 4 - 1, 19, 12), {
 			clockFace: "DailyCounter",
 			countdown: true,
 			showSeconds: false
 		});
-
-		var list = ["kaya pa?", "kaya pa ba?", "ano na?", "gumawa ka na lang kaya", "go! go! go!", "kaya mo yan!", "sige lang, laban!", "hello", "sige, mag-break ka muna", "ano na?", "o anong hinihintay mo? pasko?", "hala ka. kulang ka na sa oras", "delayed! haha!", "keep on fighting!", "fight!", "rest if you must but don't you quit", "hi!", "cram pa more", "iyak na lang", "lol", "hehe", "nasa huli ang pagsisisi", "o kay bilis ng panahon", "kape pa?", "kaya yan. kaw pa!", "panget ka", "binibigay mo na ba ang lahat?", "isa-isa lang kasi", "wala na", "mamalasin ka bukas", "sipag at tiyaga lang yan!", "kapag may tiyaga, may nilaga", "tignan mo o. wala ng oras", "tama na yan", "tama na ba yan?"];
-		var subtext = document.getElementById("subtext");
-		subtext.innerHTML = list[Math.floor(Math.random() * list.length)];
 	</script>
 </body>
 </html>
